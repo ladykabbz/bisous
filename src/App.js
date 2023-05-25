@@ -1,10 +1,13 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Container from "react-bootstrap/Container";
+
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+
+import Container from "react-bootstrap/Container";
+
 import nails from "./images/nails.jpg";
-import salon1 from "./images/salon1.jpg";
+
 import salon2 from "./images/salon2.jpg";
 import salon3 from "./images/salon3.jpg";
 import salon4 from "./images/salon4.jpg";
@@ -13,34 +16,40 @@ import salon6 from "./images/salon6.jpg";
 import salon7 from "./images/salon7.jpg";
 import salon8 from "./images/salon8.jpg";
 import Carousel from "react-bootstrap/Carousel";
+import Booking from "./booking";
 import "./App.css";
 
 export default function App() {
   return (
     <div className="App">
-      <>
-        <Navbar bg="dark" variant="dark">
-          <Container>
-            <Navbar.Brand className="logo" href="#home">
-              BISOUS BEAUTY BAR
-            </Navbar.Brand>
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Container>
+          <Navbar.Brand className="logo" href="#home">
+            BISOU BEAUTY BAR
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <Nav.Link href="#features">Services</Nav.Link>
-              <Nav.Link href="#pricing">Contact us</Nav.Link>
+              <Nav.Link href="#features">Home</Nav.Link>
+              <Nav.Link href="#pricing">Services</Nav.Link>
+              <Nav.Link href="#pricing">Gallery</Nav.Link>
+              <Nav.Link href="#pricing">Contact</Nav.Link>
             </Nav>
-          </Container>
-        </Navbar>
-      </>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
 
       <div className="intro">
-        <h2 className="one">MASTERPIECE TO BEAUTY</h2>
-        <button className="button">
-          {" "}
-          <a className="link" href="https://example.com">
-            BOOK AN APPOINTMENT
-          </a>{" "}
-        </button>
+        <div className="container">
+          <h2 className="one">masterpiece to beauty</h2>
+          <button className="button">
+            {" "}
+            <a className="link" href="https://example.com">
+              BOOK AN APPOINTMENT
+            </a>{" "}
+          </button>
+          <Booking />
+        </div>
       </div>
 
       <div className="container">
@@ -66,8 +75,8 @@ export default function App() {
               <img
                 src={nails}
                 alt="nails"
-                width={425}
-                height={425}
+                width={400}
+                height={400}
                 className="nailsimg"
               />
             </div>
@@ -78,60 +87,60 @@ export default function App() {
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
-            <h3>MANICURE</h3>
+            <h3>HAIR CARE</h3>
             <hr />
 
             <div className="row">
               <div className="col-6">
-                <h5>EXPRESS MANICURE</h5>
+                <h5>LADIES CUT</h5>
               </div>
               <div className="col-6">
-                <h5>KSH 1000</h5>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-6">
-                <h5>EXPRESS MANICURE</h5>
-              </div>
-              <div className="col-6">
-                <h5>KSH 1000</h5>
+                <h5>KSH 4000</h5>
               </div>
             </div>
             <div className="row">
               <div className="col-6">
-                <h5>EXPRESS MANICURE</h5>
+                <h5>GIRLS CUT</h5>
               </div>
               <div className="col-6">
-                <h5>KSH 1000</h5>
+                <h5>KSH 2000</h5>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-6">
+                <h5>WASH AND SET</h5>
+              </div>
+              <div className="col-6">
+                <h5>KSH 2000</h5>
               </div>
             </div>
           </div>
 
           <div className="col-lg-6">
-            <h3>PEDICURE</h3>
+            <h3>HAIR EXTENSION</h3>
             <hr />
             <div className="row">
               <div className="col-6">
-                <h5>EXPRESS MANICURE</h5>
+                <h5>WEAVING</h5>
               </div>
               <div className="col-6">
-                <h5>KSH 1000</h5>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-6">
-                <h5>EXPRESS MANICURE</h5>
-              </div>
-              <div className="col-6">
-                <h5>KSH 1000</h5>
+                <h5>KSH 4500</h5>
               </div>
             </div>
             <div className="row">
               <div className="col-6">
-                <h5>EXPRESS MANICURE</h5>
+                <h5>WIG INSTALLMENT</h5>
               </div>
               <div className="col-6">
-                <h5>KSH 1000</h5>
+                <h5>KSH 6000</h5>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-6">
+                <h5>BRAIDING</h5>
+              </div>
+              <div className="col-6">
+                <h5>KSH 3000</h5>
               </div>
             </div>
           </div>
@@ -154,18 +163,18 @@ export default function App() {
             </div>
             <div className="row">
               <div className="col-6">
-                <h5>EXPRESS MANICURE</h5>
+                <h5>DRY MANICURE</h5>
               </div>
               <div className="col-6">
-                <h5>KSH 1000</h5>
+                <h5>KSH 1500</h5>
               </div>
             </div>
             <div className="row">
               <div className="col-6">
-                <h5>EXPRESS MANICURE</h5>
+                <h5>FRENCH MANICURE</h5>
               </div>
               <div className="col-6">
-                <h5>KSH 1000</h5>
+                <h5>KSH 2000</h5>
               </div>
             </div>
           </div>
@@ -175,26 +184,26 @@ export default function App() {
             <hr />
             <div className="row">
               <div className="col-6">
-                <h5>EXPRESS MANICURE</h5>
+                <h5>SHELLAC PEDICURE</h5>
               </div>
               <div className="col-6">
-                <h5>KSH 1000</h5>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-6">
-                <h5>EXPRESS MANICURE</h5>
-              </div>
-              <div className="col-6">
-                <h5>KSH 1000</h5>
+                <h5>KSH 3000</h5>
               </div>
             </div>
             <div className="row">
               <div className="col-6">
-                <h5>EXPRESS MANICURE</h5>
+                <h5>EXPRESS PEDICURE</h5>
               </div>
               <div className="col-6">
-                <h5>KSH 1000</h5>
+                <h5>KSH 1500</h5>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-6">
+                <h5>CLASSIC PEDICURE</h5>
+              </div>
+              <div className="col-6">
+                <h5>KSH 2000</h5>
               </div>
             </div>
           </div>

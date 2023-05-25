@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&display=swap");
 .App {
   font-family: "Nanum Myeongjo", serif;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -18,17 +19,28 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 220px;
+  padding: 10%;
+  flex-direction: column;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Set the height of the container to fill the viewport */
 }
 .one {
   text-align: center;
   color: rgb(17, 15, 15);
   font-weight: bolder;
-  font-size: 36px;
+  font-size: 46px;
   font-family: "Zen Tokyo Zoo", cursive;
+  padding: 10px;
+}
+.container {
+  text-align: center;
 }
 .nailsimg {
   border-radius: 50%;
+  padding: 10px;
 }
 .about {
   padding: 30px;
@@ -120,8 +132,10 @@ h1 {
 .pbottom {
   color: white;
   font-weight: 200;
-  font-size: 18px;
-  padding: 16px;
+  font-size: 12px;
+  padding: 18px;
+  display: flex;
+  justify-content: flex-start;
 }
 .bottom2 {
   text-align: center;
