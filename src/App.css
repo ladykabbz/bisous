@@ -1,38 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&display=swap");
 .App {
+  font-family: "Nanum Myeongjo", serif;
+}
+
+.navbar {
+  width: 100%;
+  padding: 30px;
+}
+.logo {
+  font-family: "Zen Tokyo Zoo", cursive;
+  color: pink;
+}
+.intro {
+  background-image: url(images/room.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 220px;
+}
+.one {
+  text-align: center;
+  color: rgb(17, 15, 15);
+  font-weight: bolder;
+  font-size: 36px;
+  font-family: "Zen Tokyo Zoo", cursive;
+}
+.nailsimg {
+  border-radius: 50%;
+}
+.about {
+  padding: 30px;
+}
+p {
+  font-size: 22px;
+  font-weight: 600;
+}
+h3 {
+  text-align: center;
+  color: rgb(245, 152, 167);
+  font-weight: bolder;
+  font-size: 30px;
+}
+hr {
+  border-color: rgb(0, 0, 0);
+  border-width: 4px;
+}
+ul {
+  list-style: none;
+}
+.d-block {
+  display: block;
+  margin: 0 auto;
+}
+.form-field {
+  margin: 10px;
+  padding: 10px;
+}
+form {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  padding: 10px;
+  width: 400px;
+}
+.contactheading {
+  text-align: center;
+  padding-top: 24px;
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 50px;
+  color: rgb(245, 152, 167);
+}
+.contactp {
+  text-align: center;
+}
+h1 {
+  color: rgb(245, 152, 167);
+  text-decoration: underline;
+  font-weight: 600;
+}
+.gallery {
+  text-align: center;
+}
+.galleryheading {
+  font-weight: 600;
+  color: rgb(245, 152, 167);
+  text-decoration: underline;
+  font-family: "Zen Tokyo Zoo", cursive;
+  padding-top: 50px;
+}
+.button {
+  padding: 10px;
+  border-radius: 6px;
+  background-color: rgb(245, 152, 167);
+  display: block;
+  margin: 0 auto;
+}
+.link {
+  color: black;
+  text-decoration: none;
+}
+.link:hover {
+  color: grey;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.finisher {
+  background-color: black;
+  padding: 30px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.h3finish {
+  font-family: "Zen Tokyo Zoo", cursive;
+}
+.bottom {
+  border-color: white;
+  border-width: 4px;
+}
+.pbottom {
   color: white;
+  font-weight: 200;
+  font-size: 18px;
+  padding: 16px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bottom2 {
+  text-align: center;
+  color: rgb(196, 180, 180);
+  font-size: 16px;
 }
