@@ -16,7 +16,7 @@ import salon6 from "./images/salon6.jpg";
 import salon7 from "./images/salon7.jpg";
 import salon8 from "./images/salon8.jpg";
 import Carousel from "react-bootstrap/Carousel";
-import Booking from "./booking";
+
 import "./App.css";
 
 export default function App() {
@@ -48,7 +48,6 @@ export default function App() {
               BOOK AN APPOINTMENT
             </a>{" "}
           </button>
-          <Booking />
         </div>
       </div>
 
