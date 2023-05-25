@@ -8,11 +8,11 @@
 
 .navbar {
   width: 100%;
-  padding: 30px;
+  padding: 30px !important;
 }
 .logo {
   font-family: "Zen Tokyo Zoo", cursive;
-  color: pink;
+  color: pink !important;
 }
 .intro {
   background-image: url(images/room.jpg);
@@ -141,4 +141,36 @@ h1 {
   text-align: center;
   color: rgb(196, 180, 180);
   font-size: 16px;
+}
+.bookingsub {
+  font-size: 16px;
+  text-decoration: underline;
+  padding-top: 14px;
+  margin: 0;
+}
+.submitbook {
+  padding: 8px;
+  border-radius: 12px;
+  background: rgb(235, 109, 130);
+}
+.submitbook:hover {
+  background: rgb(43, 40, 40);
+  color: white;
+}
+.bookhead {
+  color: black;
+  font-size: 18px;
+  padding: 12px;
+  text-decoration: underline;
+  margin: 0;
+}
+.select {
+  padding: 6px;
+  margin: 4px;
+}
+.socialmedia {
+  text-align: center;
+}
+a {
+  padding: 10px;
 }

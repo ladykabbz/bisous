@@ -1,4 +1,5 @@
 import React from "react";
+import Booking from "./booking";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Nav from "react-bootstrap/Nav";
@@ -7,6 +8,9 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 
 import nails from "./images/nails.jpg";
+import gram from "./images/instagram.png";
+import twitter from "./images/twitter.png";
+import gmail from "./images/gmail.png";
 
 import salon2 from "./images/salon2.jpg";
 import salon3 from "./images/salon3.jpg";
@@ -30,10 +34,10 @@ export default function App() {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#features">Home</Nav.Link>
-              <Nav.Link href="#pricing">Services</Nav.Link>
-              <Nav.Link href="#pricing">Gallery</Nav.Link>
-              <Nav.Link href="#pricing">Contact</Nav.Link>
+              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="#services">Services</Nav.Link>
+              <Nav.Link href="#gallery">Gallery</Nav.Link>
+              <Nav.Link href="#contact">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -42,12 +46,8 @@ export default function App() {
       <div className="intro">
         <div className="container">
           <h2 className="one">masterpiece to beauty</h2>
-          <button className="button">
-            {" "}
-            <a className="link" href="https://example.com">
-              BOOK AN APPOINTMENT
-            </a>{" "}
-          </button>
+
+          <Booking />
         </div>
       </div>
 
@@ -55,7 +55,7 @@ export default function App() {
         <div className="about">
           <div className="row">
             <div className="col-lg-6">
-              <h1>OUR SERVICES</h1>
+              <h1 id="services">OUR SERVICES</h1>
               <p>
                 We offer a serene and tranquil space of indulgent
                 beautification, with unrivalled access to exclusive treatments
@@ -219,7 +219,7 @@ export default function App() {
         </a>{" "}
       </button>
 
-      <div className="gallery">
+      <div className="gallery" id="gallery">
         <h2 className="galleryheading"> BISOU GALLERY</h2>
         <p>
           We are excited to welcome you to our beauty salon, bringing a touch of
@@ -235,12 +235,6 @@ export default function App() {
                 width={200}
                 height={500}
               />
-              <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>
-                  Nulla vitae elit libero, a pharetra augue mollis interdum.
-                </p>
-              </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img
@@ -250,11 +244,6 @@ export default function App() {
                 width={200}
                 height={500}
               />
-
-              <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img
@@ -264,13 +253,6 @@ export default function App() {
                 width={200}
                 height={500}
               />
-              <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur.
-                </p>
-              </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img
@@ -280,13 +262,6 @@ export default function App() {
                 width={200}
                 height={500}
               />
-              <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur.
-                </p>
-              </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img
@@ -296,13 +271,6 @@ export default function App() {
                 width={200}
                 height={500}
               />
-              <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur.
-                </p>
-              </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img
@@ -312,13 +280,6 @@ export default function App() {
                 width={200}
                 height={500}
               />
-              <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur.
-                </p>
-              </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img
@@ -328,13 +289,6 @@ export default function App() {
                 width={200}
                 height={500}
               />
-              <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur.
-                </p>
-              </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
         </div>
@@ -381,7 +335,9 @@ export default function App() {
 
       <div className="finisher">
         <div className="container">
-          <h3 className="h3finish">BISOU ROSE</h3>
+          <h3 className="h3finish" id="contact">
+            BISOU ROSE
+          </h3>
 
           <p className="pbottom">GIVE US A CALL (+254)743565565</p>
           <hr className="bottom" />
@@ -390,6 +346,36 @@ export default function App() {
         <hr className="bottom" />
         <p className="bottom2">
           Copyright ©2022 <br /> Masterpiece to beauty <br /> Nicole Kabii
+        </p>
+        <hr className="bottom" />
+        <p className="socialmedia">
+          <a href="https://www.instagram.com/officialbisourose/?igshid=YmMyMTA2M2Y%3D">
+            <img
+              className="socials"
+              src={gram}
+              alt="instagram"
+              width={20}
+              height={20}
+            />
+          </a>
+          <a href="https://www.tiktok.com/@officialbisourose?_t=8Wxio4wNWRK&_r=1">
+            <img
+              className="socials"
+              src={twitter}
+              alt="tiktok"
+              width={20}
+              height={20}
+            />
+          </a>
+          <a href="mailto:kabiinicole@gmail.com">
+            <img
+              className="socials"
+              src={gmail}
+              alt="email"
+              width={20}
+              height={20}
+            />
+          </a>
         </p>
       </div>
     </div>
