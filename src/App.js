@@ -1,6 +1,7 @@
 import React from "react";
 import Booking from "./booking";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Appointment from "./Appointment";
 
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -295,43 +296,44 @@ export default function App() {
       </div>
 
       <h1 className="contactheading">Contact Us</h1>
-      <p className="contactp">We are here to help you</p>
+      <p className="contactp">We are here to help you😊</p>
 
       <form>
         <div className="form-field">
           <input
+          className="nameinput"
             type="text"
             id="fullname"
             name="fullname"
-            placeholder="Enter your full name"
+            placeholder="FULL NAME"
             required
           />
         </div>
 
         <div className="form-field">
           <input
+          className="emailinput"
             type="email"
             id="email"
             name="email"
-            placeholder="Enter your email"
+            placeholder="EMAIL ADDRESS"
             required
           />
         </div>
 
         <div className="form-field">
           <input
+          className="phoneinput"
             type="tel"
             id="phone"
             name="phone"
-            placeholder="Enter your phone number"
+            placeholder="PHONE NUMBER"
             required
           />
         </div>
-
-        <div className="form-field">
-          <input type="submit" value="SEND" />
-        </div>
+<Appointment />
       </form>
+      
 
       <div className="finisher">
         <div className="container">

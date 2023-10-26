@@ -79,14 +79,15 @@ input {
 }
 .contactheading {
   text-align: center;
-  padding-top: 24px;
+  padding: 24px;
   font-weight: 600;
   text-decoration: underline;
-  font-size: 50px;
+  font-size: 30px;
   color: rgb(245, 152, 167);
 }
 .contactp {
   text-align: center;
+  margin: 0 auto;
 }
 h1 {
   color: rgb(245, 152, 167);
@@ -173,4 +174,15 @@ h1 {
 }
 a {
   padding: 10px;
+}
+.nameinput,
+.phoneinput,
+.emailinput {
+  border-radius: 12px;
+
+
+}
+.sendinput {
+  border-radius: 12px;
+  background-color: rgb(235, 109, 130);
 }
