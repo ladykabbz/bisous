@@ -14,13 +14,13 @@ import twitter from "./images/twitter.png";
 import gmail from "./images/gmail.png";
 
 import salon2 from "./images/salon2.jpg";
-import salon3 from "./images/salon3.jpg";
+
 import salon4 from "./images/salon4.jpg";
 import salon5 from "./images/salon5.jpg";
 import salon6 from "./images/salon6.jpg";
 import salon7 from "./images/salon7.jpg";
 import salon8 from "./images/salon8.jpg";
-import Carousel from "react-bootstrap/Carousel";
+
 
 import "./App.css";
 
@@ -227,71 +227,62 @@ export default function App() {
           London to Nairobi! 🥂
         </p>
         <div className="container">
-          <Carousel>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
+          <div className="row">
+<div className="col-sm-2">
+<img
                 src={salon2}
                 alt="nails"
                 width={200}
-                height={500}
+                height={200}
+                className="nailsimg"
               />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={salon3}
-                alt="nails"
-                width={200}
-                height={500}
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={salon4}
-                alt="nails"
-                width={200}
-                height={500}
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={salon5}
-                alt="nails"
-                width={200}
-                height={500}
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={salon6}
-                alt="nails"
-                width={200}
-                height={500}
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={salon7}
-                alt="nails"
-                width={200}
-                height={500}
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
+</div>
+<div className="col-sm-2">
+<img
                 src={salon8}
                 alt="nails"
                 width={200}
-                height={500}
+                height={200}
+                className="nailsimg"
               />
-            </Carousel.Item>
-          </Carousel>
+</div>
+<div className="col-sm-2">
+<img
+                src={salon4}
+                alt="nails"
+                width={200}
+                height={200}
+                className="nailsimg"
+              />
+</div>
+<div className="col-sm-2">
+<img
+                src={salon5}
+                alt="nails"
+                width={200}
+                height={200}
+                className="nailsimg"
+              />
+</div>
+<div className="col-sm-2">
+<img
+                src={salon6}
+                alt="nails"
+                width={200}
+                height={200}
+                className="nailsimg"
+              />
+</div>
+<div className="col-sm-2">
+<img
+                src={salon7}
+                alt="nails"
+                width={200}
+                height={200}
+                className="nailsimg"
+              />
+</div>
+          </div>
         </div>
       </div>
 
