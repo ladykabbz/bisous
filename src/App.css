@@ -41,6 +41,7 @@
 .nailsimg {
   border-radius: 50%;
   padding: 10px;
+  box-shadow: 4px 4px 4px 4px pink;
 }
 .about {
   padding: 30px;
@@ -79,7 +80,7 @@ input {
 }
 .contactheading {
   text-align: center;
-  padding: 24px;
+  padding-top: 52px;
   font-weight: 600;
   text-decoration: underline;
   font-size: 30px;
@@ -185,4 +186,19 @@ a {
 .sendinput {
   border-radius: 12px;
   background-color: rgb(235, 109, 130);
+  font-weight: bold;
+  font-size: 14px;
+ 
 }
+.fnameinput,
+.fnuminput {
+  padding: 10px;
+  margin: 10px;
+}
+.button {
+  font-size: 14px;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: bold;
+}
+
+

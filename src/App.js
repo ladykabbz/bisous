@@ -51,7 +51,7 @@ export default function App() {
           <Booking />
         </div>
       </div>
-
+      <div className="phase1">
       <div className="container">
         <div className="about">
           <div className="row">
@@ -70,6 +70,7 @@ export default function App() {
                 beautified. Drop in or book today!
               </p>
             </div>
+
 
             <div className="col-lg-6">
               <img
@@ -218,8 +219,11 @@ export default function App() {
         >
           VIEW FULL PRICE LIST
         </a>{" "}
+        
       </button>
-
+      <br />
+        <br />
+      </div>
       <div className="gallery" id="gallery">
         <h2 className="galleryheading"> BISOU GALLERY</h2>
         <p>

@@ -10,14 +10,14 @@ const Booking = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Thank you Darling, we will get back to you as soon as possible!💕.");
+    alert("");
     setIsFormOpen(false);
   };
 
   return (
     <div>
       <button onClick={handleClick} className="button">
-        BOOK AN APPOINTMENT
+        BA
       </button>
       {isFormOpen && (
         <div style={{ position: "relative" }}>
@@ -42,13 +42,14 @@ const Booking = () => {
               height: 300,
               padding: 10,
               background: "pink",
-            }}
+            }} 
           >
-            <form onSubmit={handleSubmit}>
+            
+            <form className="bookingpart" onSubmit={handleSubmit}>
               <h3 className="bookhead">BOOK YOUR APPOINTMENT TODAY!</h3>
 
-              <input type="text" placeholder="Full name" />
-              <input type="tel" placeholder="Phone number" />
+              <input className="fnameinput" type="text" placeholder="Full name" />
+              <input className="fnuminput" type="tel" placeholder="Phone number" />
               <br />
 
               <p className="bookingsub">pick a service</p>
